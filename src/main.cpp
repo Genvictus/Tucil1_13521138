@@ -76,11 +76,13 @@ int main(){
             nsol = solutions.size();
             if(nsol == 0){
                 cout << "Tidak ada solusi yang mungkin\n";
+                cout << "(time taken: " << duration.count() << " microseconds)\n";
             }
             else{
                 cout << "Jumlah solusi yang mungkin: " << nsol << "\n";
                 printRes(solutions);
-                cout << "Proses telah selesai dijalankan. (time taken: " << duration.count() << " microseconds)\n";
+                cout << "Proses telah selesai dijalankan.\n";
+                cout << "(time taken: " << duration.count() << " microseconds)\n";
                 for(;;){
                     cout << "Simpan hasil dalam file (Y/N)? ";
                     getline(cin, line);
