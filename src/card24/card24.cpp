@@ -30,10 +30,9 @@ vector<string> solve24(vector<int> nums){
 vector<vector<int>> permute(vector<int> nums){
     /* KAMUS LOKAL */
     vector<int> subnums;
-    vector<int>::iterator n_it, subn_it;
+    vector<int>::iterator n_it;
 
     set<vector<int>> solutions;
-    set<vector<int>>::iterator s_it;
 
     vector<vector<int>> nextpermute;
     vector<vector<int>>::iterator p_it;
